@@ -1,13 +1,30 @@
     <header>
-      <h1>Kubota Hiroki Artist site</h1>
-
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/works">Works</a>
-        <a href="/cv">CV</a>
-        <a href="/contact">Contact</a>
-      </nav>
-
-      <hr />
+      <div class="head-inner">
+        <div class="sitename">
+          <h1><a href="/"><img src="/images/common/sitelogo.svg" alt="Kubota Hiroki"></a></h1>
+        </div>
+        <div class="gnav">
+          <button class="menu-button" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="site-nav">
+            <a href="/statement">Statement</a>
+            <a href="/cv">CV</a>
+            <a href="/works">Works</a>
+            <a href="https://www.instagram.com/kubota.hiroki_kkic/" target="_blank">instagram</a>
+          </nav>
+        </div>
+      </div>
     </header>
+    <script is:inline>
+const button = document.querySelector('.menu-button');
+const nav = document.querySelector('.site-nav');
+
+button?.addEventListener('click', () => {
+  button.classList.toggle('is-open');
+  nav?.classList.toggle('is-open');
+});
+</script>
+   
