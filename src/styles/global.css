@@ -66,6 +66,14 @@ main{
   margin: auto;
   padding: 0 20px;
 }
+.content-wide-left{
+  margin: auto;
+  padding: 0 40px 40px 0;
+}
+.content-wide-right{
+  margin: auto;
+  padding: 0 0 40px 40px;
+}
 .content-title {
  padding: 10px 0px;
 }
@@ -73,9 +81,26 @@ main{
   margin: 0;
   font-size: 20px;
 }
-.top-content h2{
-  text-align: center;
-  font-size: 20px;
+.top-content .cover{
+  position: relative;
+}
+.top-content .content-wide-left h2.covertext{
+  font-size: 32px;
+  padding: 20px;
+  position: absolute;
+  left:20px;
+  bottom: 20px;
+  color: #fff;
+  margin: 0;
+}
+.top-content .content-wide-right h2.covertext{
+  font-size: 32px;
+  padding: 20px;
+  position: absolute;
+  right:20px;
+  bottom: 20px;
+  color: #fff;
+  margin: 0;
 }
 .cv-block{
   margin: 30px 0px;
@@ -97,7 +122,17 @@ main{
 .only-sp{
     display: none;
   }
+.back{
+  font-size: 12px;
+  color: #333;
+}
 @media (max-width: 768px) {
+  .content-wide-left{
+  padding: 0 20px 20px 0;
+}
+.content-wide-right{
+  padding: 0 0 20px 20px;
+}
   .only-pc{
     display: none;
   }
