@@ -94,7 +94,16 @@ main{
   padding: 0px;
   font-size: 14px;
 }
+.only-sp{
+    display: none;
+  }
 @media (max-width: 768px) {
+  .only-pc{
+    display: none;
+  }
+  .only-sp{
+    display: block;
+  }
   .site-header {
     height: 64px;
     padding: 0 20px;
